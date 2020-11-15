@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "mappings": "AGAA,AAAA,OAAO,AAAC,CACJ,gBAAgB,CAAE,OAAe,CACpC,AAED,AAAA,SAAS,AAAC,CACN,KAAK,CAAE,gBAAgB,CAC1B,AHFD,AAAA,CAAC,AAAC,CACE,MAAM,CAAE,CAAC,CACT,OAAO,CAAE,CAAC,CACV,UAAU,CAAE,UAAU,CACzB",
+    "sources": [
+        "../../sass/main.scss",
+        "../../sass/_header.scss",
+        "../../sass/_content.scss",
+        "../../sass/_nav.scss",
+        "../../sass/_footer.scss"
+    ],
+    "names": [],
+    "file": "main.min.css"
+}
