@@ -7,3 +7,38 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.parallax {
+    /* The image used */
+    background-image: url("../img/DefultBackground.jpg") !important;
+    /* Set a specific height */
+    min-height: 500px !important;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+.grid-continer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "grid-item-header grid-item-header grid-item-header grid-item-header""grid-item-headerShow grid-item-headerShow grid-item-headerShow grid-item-headerShow""grid-item-mainContent grid-item-mainContent grid-item-mainContent grid-item-mainContent""grid-item-footer grid-item-footer grid-item-footer grid-item-footer";
+}
+
+.grid-item-header {
+    grid-area: grid-item-header;
+}
+
+.grid-item-headerShow {
+    grid-area: grid-item-headerShow;
+}
+
+.grid-item-mainContent {
+    grid-area: grid-item-mainContent;
+}
+
+.grid-item-footer {
+    grid-area: grid-item-footer;
+}
