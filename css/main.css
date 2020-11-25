@@ -4,6 +4,81 @@
   min-height: 20vh;
 }
 
+.flexContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 1em;
+}
+
+.first-content {
+  max-width: 100%;
+}
+
+.contentAbout {
+  background-color: #fff;
+  color: #000;
+  text-align: justify;
+  line-height: 1.5;
+  padding: 1em;
+  border-radius: 5px;
+}
+
+.second-content {
+  max-width: 30%;
+  padding-left: 5px;
+}
+
+.center.c1 {
+  border: none;
+  background: #fff;
+  padding: 1em 1em;
+  -webkit-box-shadow: 3px 10px 26px -5px rgba(0, 0, 0, 0.25);
+          box-shadow: 3px 10px 26px -5px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  margin-bottom: 1.2em;
+}
+
+.join {
+  color: #fff;
+  padding: .3em .8em;
+  font-size: 1.3em;
+  border-radius: .2em;
+  font-family: 'Oswald', sans-serif;
+  background: #b20000;
+  -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.33);
+          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.33);
+  text-transform: uppercase;
+  margin-top: 1em;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+@media (max-width: 900px) {
+  html:not(.home) .center.c1 {
+    max-width: 700px;
+  }
+}
+
+html:not(.home) .center.c1 {
+  padding: 1em 1em;
+}
+
+@media (max-width: 900px) {
+  html:not(.home) .center {
+    max-width: 300px;
+    margin: 0 auto;
+    background: transparent;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
 .navbar {
   background-color: #2a1931;
 }
@@ -30,7 +105,7 @@ footer {
   /* The image used */
   background-image: url("../img/DefultBackground.jpg") !important;
   /* Set a specific height */
-  min-height: 500px !important;
+  min-height: 600px !important;
   /* Create the parallax scrolling effect */
   background-attachment: fixed !important;
   background-position: center !important;
