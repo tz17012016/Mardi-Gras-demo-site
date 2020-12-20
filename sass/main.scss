@@ -24,7 +24,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
-    grid-template-areas: "grid-item-header grid-item-header grid-item-header grid-item-header""grid-item-headerShow grid-item-headerShow grid-item-headerShow grid-item-headerShow""grid-item-mainContent grid-item-mainContent grid-item-mainContent grid-item-mainContent""grid-item-footer grid-item-footer grid-item-footer grid-item-footer";
+    grid-template-areas: "grid-item-header grid-item-header grid-item-header grid-item-header" "grid-item-headerShow grid-item-headerShow grid-item-headerShow grid-item-headerShow" "grid-item-mainContent grid-item-mainContent grid-item-mainContent grid-item-mainContent" "grid-item-footer grid-item-footer grid-item-footer grid-item-footer";
 }
 
 .grid-item-header {

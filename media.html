@@ -26,12 +26,13 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
-                        <div class="navbar-nav ">
-                            <a class="nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
-                            <a class="nav-link" href="about.html">About</a>
-                            <a class="nav-link" href="media.html">Media</a>
-                            <a class="nav-link" href="FAQ.html">FAQ</a>
-                            <a class="nav-link" href="contact.html">Contact</a>
+                        <div class="navbar-nav  ">
+                            <a class="nav-link m-3 bg-primary rounded text-center active" href="index.html">Home <span
+                                    class="sr-only">(current)</span></a>
+                            <a class="nav-link m-3 bg-primary rounded text-center" href="about.html">About</a>
+                            <a class="nav-link m-3 bg-primary rounded text-center" href="media.html">Media</a>
+                            <a class="nav-link m-3 bg-primary rounded text-center" href="FAQ.html">FAQ</a>
+                            <a class="nav-link m-3 bg-primary rounded text-center" href="contact.html">Contact</a>
 
                         </div>
                     </div>
@@ -39,6 +40,14 @@
             </header>
             <!--headerPhoto-->
             <section class="grid-item-headerShow">
+                <img src="https://dummyimage.com/3000x500/000/fff" class="img-fluid" alt="Responsive image">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">Fluid jumbotron</h1>
+                        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.
+                        </p>
+                    </div>
+                </div>
 
             </section>
 
@@ -49,68 +58,67 @@
                         <!--first-content-->
                         <section class="first-content">
                             <div class="row">
-                                <div class="col-lg-12">
+                                <div class=" bg-light ">
+                                    <div class="column card col-4">
+                                        <img class="card-img" src="img/mardiGras1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                                    </div>
+                                    <div class="column card col-4">
+                                        <img class="card-img" src="img/mardiGras2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                                    </div>
+                                    <div class="column card col-4">
+                                        <img class="card-img" src="img/mardiGras3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                                    </div>
+                                    <div class="column card col-4">
+                                        <img class="card-img" src="img/mardiGras4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+                                    </div>
+                                </div>
+                            </div>
 
-                                    <div id="mdb-lightbox-ui"></div>
+                            <div id="myModal" class="modal">
+                                <span class="close cursor" onclick="closeModal()">&times;</span>
+                                <div class="modal-content">
 
-                                    <div class="mdb-lightbox row">
-
-                                        <figure class="col-md-4">
-                                            <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(145).jpg" data-size="1600x1067">
-                                                <img alt="picture" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(145).jpg" class="img-fluid">
-                                            </a>
-                                        </figure>
-
-                                        <figure class="col-md-4">
-                                            <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(150).jpg" data-size="1600x1067">
-                                                <img alt="picture" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(150).jpg" class="img-fluid" />
-                                            </a>
-                                        </figure>
-
-                                        <figure class="col-md-4">
-                                            <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(152).jpg" data-size="1600x1067">
-                                                <img alt="picture" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(152).jpg" class="img-fluid" />
-                                            </a>
-                                        </figure>
-
-                                        <figure class="col-md-4">
-                                            <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(42).jpg" data-size="1600x1067">
-                                                <img alt="picture" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(42).jpg" class="img-fluid" />
-                                            </a>
-                                        </figure>
-
-                                        <figure class="col-md-4">
-                                            <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(151).jpg" data-size="1600x1067">
-                                                <img alt="picture" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(151).jpg" class="img-fluid" />
-                                            </a>
-                                        </figure>
-
-                                        <figure class="col-md-4">
-                                            <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(40).jpg" data-size="1600x1067">
-                                                <img alt="picture" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(40).jpg" class="img-fluid" />
-                                            </a>
-                                        </figure>
-
-                                        <figure class="col-md-4">
-                                            <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(148).jpg" data-size="1600x1067">
-                                                <img alt="picture" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(148).jpg" class="img-fluid" />
-                                            </a>
-                                        </figure>
-
-                                        <figure class="col-md-4">
-                                            <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(147).jpg" data-size="1600x1067">
-                                                <img alt="picture" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(147).jpg" class="img-fluid" />
-                                            </a>
-                                        </figure>
-
-                                        <figure class="col-md-4">
-                                            <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(149).jpg" data-size="1600x1067">
-                                                <img alt="picture" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(149).jpg" class="img-fluid" />
-                                            </a>
-                                        </figure>
-
+                                    <div class="mySlides">
+                                        <div class="numbertext">1 / 4</div>
+                                        <img src="img/mardiGras4.jpg" style="width:100%">
                                     </div>
 
+                                    <div class="mySlides">
+                                        <div class="numbertext">2 / 4</div>
+                                        <img src="img/mardiGras3.jpg" style="width:100%">
+                                    </div>
+
+                                    <div class="mySlides">
+                                        <div class="numbertext">3 / 4</div>
+                                        <img src="img/mardiGras2.jpg" style="width:100%">
+                                    </div>
+
+                                    <div class="mySlides">
+                                        <div class="numbertext">4 / 4</div>
+                                        <img src="img/mardiGras1.jpg" style="width:100%">
+                                    </div>
+
+                                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                                    <div class="caption-container">
+                                        <p id="caption"></p>
+                                    </div>
+
+                                    <div class=" card-deck">
+                                        <div class="column card col-6">
+                                            <img class="demo cursor card-img" src="img/mardiGras1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+                                        </div>
+                                        <div class="column card col-6">
+                                            <img class="demo cursor card-img" src="img/mardiGras2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+                                        </div>
+                                        <div class="column card col-6">
+                                            <img class="demo cursor card-img" src="img/mardiGras3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+                                        </div>
+                                        <div class="column card col-6">
+                                            <img class="demo cursor card-img" src="img/mardiGras4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </section>

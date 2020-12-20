@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POPUP</title>
+    <style>
+        button {
+            display: block;
+            margin: 20px auto;
+            background-color: crimson;
+            color: #fff;
+            border: 0;
+            padding: 6px 15px;
+            font-size: 1.8em;
+            border-radius: 8px;
+            outline: 0;
+        }
+
+        #popupWrapper {
+            background-color: rgba(0, 0, 0, 0.5);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: none;
+        }
+
+        #popup {
+            font-family: arial;
+            text-align: center;
+            width: 100%;
+            max-width: 300px;
+            margin: 10% auto;
+            padding: 20px;
+            background-color: #fff;
+            position: relative;
+        }
+
+        #popup a {
+            color: #fff;
+            text-decoration: none;
+            padding: 6px 10px;
+            background-color: crimson;
+        }
+
+        #popupClose {
+            position: absolute;
+            top: 5px;
+            right: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!--#popupWrapper>#popup>#popupClose>#popupContent-->
+    <button>Click Me</button>
+    <div id="popupWrapper">
+        <div id="popup">
+            <div id="popupClose">X</div>
+            <div id="popupContent">
+                <h2>Black Friday SALE</h2>
+                <p>50% off all masks, Dont Miss Out!</p>
+                <a href="#">New masks</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        let button = document.querySelector("button");
+        let popup = document.querySelector("#popupWrapper");
+        let close = document.querySelector("#popupClose");
+        button.addEventListener('click', () => {
+            popup.style.display = 'block';
+        });
+        close.addEventListener('click', () => {
+            popup.style.display = 'none';
+        });
+        popup.addEventListener('click', (e) => {
+            if (e.target.id == "popupWrapper") {
+                popup.style.display = 'none'
+            }
+        });
+    </script>
+</body>
+
+</html>
