@@ -214,6 +214,16 @@ html:not(.home) .center.c1 {
   color: white !important;
 }
 
+.nav1 {
+  margin-right: 15em;
+}
+
+@media (max-width: 575.98px) {
+  .nav1 {
+    margin-right: 0;
+  }
+}
+
 footer {
   background-color: yellow !important;
   display: block !important;
