@@ -8,6 +8,41 @@
 
 #hide-3 {
     display: flex;
+    height: max-content;
+}
+
+.about {
+    background-image: url("../img/_big/mardi_defult-1.jpg") !important;
+    background-size: cover !important;
+    min-height: 600px !important;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+.content {
+    background-image: url("../img/_big/mardi_defult-2.jpg") !important;
+    background-size: cover !important;
+    min-height: 600px !important;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+.faq {
+    background-image: url("../img/_big/mardi_defult.jpg") !important;
+    background-size: cover !important;
+    min-height: 600px !important;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+.purple {
+    background-color: rgb(42, 25, 49);
 }
 
 .flexContent {
@@ -61,55 +96,79 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     grid-template-areas: "slidItem-1 slidItem-2 slidItem-3 slidItem-4" "slidItem-5 slidItem-6 slidItem-7 slidItem-8" "slidItem-9 slidItem-10 slidItem-11 slidItem-12";
-    gap: 2rem;
+    gap: 1.3em;
 }
 
 .slidItem-1 {
     grid-area: slidItem-1;
+    padding: 2em;
+    width: 16em;
 }
 
 .slidItem-2 {
     grid-area: slidItem-2;
+    padding: 2em;
+    width: 16em;
 }
 
 .slidItem-3 {
     grid-area: slidItem-3;
+    padding: 2em;
+    width: 16em;
 }
 
 .slidItem-4 {
     grid-area: slidItem-4;
+    padding: 2em;
+    width: 16em;
 }
 
 .slidItem-5 {
     grid-area: slidItem-5;
+    padding: 2em;
+    width: 16em;
 }
 
 .slidItem-6 {
     grid-area: slidItem-6;
+    padding: 2em;
+    width: 16em;
 }
 
 .slidItem-7 {
     grid-area: slidItem-7;
+    padding: 2em;
+    width: 16em;
 }
 
 .slidItem-8 {
     grid-area: slidItem-8;
+    padding: 2em;
+    width: 16em;
 }
 
 .slidItem-9 {
     grid-area: slidItem-9;
+    padding: 2em;
+    width: 16em;
 }
 
 .slidItem-10 {
     grid-area: slidItem-10;
+    padding: 2em;
+    width: 16em;
 }
 
 .slidItem-11 {
     grid-area: slidItem-11;
+    padding: 2em;
+    width: 16em;
 }
 
 .slidItem-12 {
     grid-area: slidItem-12;
+    padding: 2em;
+    width: 16em;
 }
 
 
@@ -151,8 +210,8 @@
     position: relative;
     background-color: #fefefe;
     margin: auto;
-    padding: 0;
-    width: 90%;
+    padding: 0px;
+    width: 100%;
     max-width: 1200px;
 }
 
@@ -164,7 +223,7 @@
     position: absolute;
     top: 10px;
     right: 25px;
-    font-size: 35px;
+    font-size: 20x;
     font-weight: bold;
 }
 
@@ -304,5 +363,32 @@ html:not(.home) .center.c1 {
     }
     #hide-3 {
         display: none;
+    }
+    .about {
+        background-image: url("../img/_big/mardi_defult-1.jpg") !important;
+        background-size: cover !important;
+        min-height: 300px !important;
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+    }
+    .content {
+        background-image: url("../img/_big/mardi_defult-2.jpg") !important;
+        background-size: cover !important;
+        min-height: 300px !important;
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+    }
+    .faq {
+        background-image: url("../img/_big/mardi_defult.jpg") !important;
+        background-size: cover !important;
+        min-height: 300px !important;
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
     }
 }
