@@ -8,9 +8,13 @@
     box-sizing: border-box;
 }
 
+body>.container {
+    padding-top: 60px;
+}
+
 .parallax {
     /* The image used */
-    background-image: url("../img/DefultBackground.jpg") !important;
+    background-image: url("https://image.freepik.com/vetores-gratis/padrao-de-carnaval-brasileiro-artistico-com-mascaras_23-2148404644.jpg") !important;
     /* Set a specific height */
     min-height: 600px !important;
     /* Create the parallax scrolling effect */

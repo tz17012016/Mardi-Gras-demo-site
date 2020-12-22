@@ -39,98 +39,177 @@
                 </nav>
             </header>
             <!--headerPhoto-->
-            <section class="grid-item-headerShow">
-                <img src="https://dummyimage.com/3000x500/000/fff" class="img-fluid" alt="Responsive image">
-                <div class="jumbotron jumbotron-fluid">
-                    <div class="container">
-                        <h1 class="display-4">Fluid jumbotron</h1>
-                        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.
-                        </p>
-                    </div>
-                </div>
-
-            </section>
+            <section class="grid-item-headerShow"></section>
 
             <!--content-container-->
             <section class="grid-item-mainContent">
-                <div class="container">
-                    <div class="flexContent">
-                        <!--first-content-->
-                        <section class="first-content">
-                            <div class="row">
-                                <div class=" bg-light ">
-                                    <div class="column card col-4">
-                                        <img class="card-img" src="img/mardiGras1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-                                    </div>
-                                    <div class="column card col-4">
-                                        <img class="card-img" src="img/mardiGras2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
-                                    </div>
-                                    <div class="column card col-4">
-                                        <img class="card-img" src="img/mardiGras3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
-                                    </div>
-                                    <div class="column card col-4">
-                                        <img class="card-img" src="img/mardiGras4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div id="myModal" class="modal">
-                                <span class="close cursor" onclick="closeModal()">&times;</span>
-                                <div class="modal-content">
-
-                                    <div class="mySlides">
-                                        <div class="numbertext">1 / 4</div>
-                                        <img src="img/mardiGras4.jpg" style="width:100%">
-                                    </div>
-
-                                    <div class="mySlides">
-                                        <div class="numbertext">2 / 4</div>
-                                        <img src="img/mardiGras3.jpg" style="width:100%">
-                                    </div>
-
-                                    <div class="mySlides">
-                                        <div class="numbertext">3 / 4</div>
-                                        <img src="img/mardiGras2.jpg" style="width:100%">
-                                    </div>
-
-                                    <div class="mySlides">
-                                        <div class="numbertext">4 / 4</div>
-                                        <img src="img/mardiGras1.jpg" style="width:100%">
-                                    </div>
-
-                                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-                                    <div class="caption-container">
-                                        <p id="caption"></p>
-                                    </div>
-
-                                    <div class=" card-deck">
-                                        <div class="column card col-6">
-                                            <img class="demo cursor card-img" src="img/mardiGras1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
-                                        </div>
-                                        <div class="column card col-6">
-                                            <img class="demo cursor card-img" src="img/mardiGras2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
-                                        </div>
-                                        <div class="column card col-6">
-                                            <img class="demo cursor card-img" src="img/mardiGras3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
-                                        </div>
-                                        <div class="column card col-6">
-                                            <img class="demo cursor card-img" src="img/mardiGras4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-
-                        <!--second-content-->
-                        <section class="second-content">
-
-                        </section>
+                <!--first-content-->
+                <section class="first-content">
+                    <div class="jumbotron jumbotron-fluid">
+                        <div class="container">
+                            <h1 class="text-center">Gallery</h1>
+                        </div>
                     </div>
-                </div>
 
+                    <div class="container">
+                        <div class="container">
+                            <div class="slidGrid">
+                                <div class="slidItem-1  ">
+                                    <img class="card-img" src="img/mardiGras1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                                </div>
+                                <div class="slidItem-2  ">
+                                    <img class="card-img" src="img/mardiGras2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                                </div>
+                                <div class="slidItem-3  ">
+                                    <img class="card-img" src="img/mardiGras3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                                </div>
+                                <div class="slidItem-4  ">
+                                    <img class="card-img" src="img/mardiGras4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+                                </div>
+                                <div class="slidItem-5  ">
+                                    <img class="card-img" src="img/mardiGras1.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+                                </div>
+                                <div class="slidItem-6  ">
+                                    <img class="card-img" src="img/mardiGras2.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+                                </div>
+                                <div class="slidItem-7  ">
+                                    <img class="card-img" src="img/mardiGras3.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+                                </div>
+                                <div class="slidItem-8  ">
+                                    <img class="card-img" src="img/mardiGras4.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+                                </div>
+                                <div class="slidItem-9  ">
+                                    <img class="card-img" src="img/mardiGras1.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+                                </div>
+                                <div class="slidItem-10  ">
+                                    <img class="card-img" src="img/mardiGras2.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+                                </div>
+                                <div class="slidItem-11  ">
+                                    <img class="card-img" src="img/mardiGras3.jpg" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+                                </div>
+                                <div class="slidItem-12  ">
+                                    <img class="card-img" src="img/mardiGras4.jpg" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="myModal" class="modal">
+                            <span class="close cursor" onclick="closeModal()">&times;</span>
+                            <div class="modal-content">
+
+                                <div class="mySlides">
+                                    <div class="numbertext">1 / 12</div>
+                                    <img src="img/mardiGras1.jpg" style="width:100%">
+                                </div>
+
+                                <div class="mySlides">
+                                    <div class="numbertext">2 / 12</div>
+                                    <img src="img/mardiGras2.jpg" style="width:100%">
+                                </div>
+
+                                <div class="mySlides">
+                                    <div class="numbertext">3 / 12</div>
+                                    <img src="img/mardiGras3.jpg" style="width:100%">
+                                </div>
+
+                                <div class="mySlides">
+                                    <div class="numbertext">4 / 12</div>
+                                    <img src="img/mardiGras4.jpg" style="width:100%">
+                                </div>
+
+                                <div class="mySlides">
+                                    <div class="numbertext">5 / 12</div>
+                                    <img src="img/mardiGras1.jpg" style="width:100%">
+                                </div>
+
+                                <div class="mySlides">
+                                    <div class="numbertext">6 / 12</div>
+                                    <img src="img/mardiGras2.jpg" style="width:100%">
+                                </div>
+
+                                <div class="mySlides">
+                                    <div class="numbertext">7 / 12</div>
+                                    <img src="img/mardiGras3.jpg" style="width:100%">
+                                </div>
+
+                                <div class="mySlides">
+                                    <div class="numbertext">8 / 12</div>
+                                    <img src="img/mardiGras4.jpg" style="width:100%">
+                                </div>
+
+                                <div class="mySlides">
+                                    <div class="numbertext">9 / 12</div>
+                                    <img src="img/mardiGras1.jpg" style="width:100%">
+                                </div>
+
+                                <div class="mySlides">
+                                    <div class="numbertext">10 / 12</div>
+                                    <img src="img/mardiGras2.jpg" style="width:100%">
+                                </div>
+
+                                <div class="mySlides">
+                                    <div class="numbertext">11 / 12</div>
+                                    <img src="img/mardiGras3.jpg" style="width:100%">
+                                </div>
+
+                                <div class="mySlides">
+                                    <div class="numbertext">12 / 12</div>
+                                    <img src="img/mardiGras4.jpg" style="width:100%">
+                                </div>
+
+                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                                <div class="caption-container">
+                                    <p id="caption"></p>
+                                </div>
+
+                                <div id="hide-3" class=" card-deck ">
+                                    <div class=" card col-sm-4">
+                                        <img class="demo cursor card-img" src="img/mardiGras1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+                                    </div>
+                                    <div class=" card col-sm-4">
+                                        <img class="demo cursor card-img" src="img/mardiGras2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+                                    </div>
+                                    <div class=" card col-sm-4">
+                                        <img class="demo cursor card-img" src="img/mardiGras3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+                                    </div>
+                                    <div class=" card col-sm-4">
+                                        <img class="demo cursor card-img" src="img/mardiGras4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+                                    </div>
+                                    <div class=" card col-sm-4">
+                                        <img class="demo cursor card-img" src="img/mardiGras1.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+                                    </div>
+                                    <div class=" card col-sm-4">
+                                        <img class="demo cursor card-img" src="img/mardiGras2.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snow">
+                                    </div>
+                                    <div class=" card col-sm-4">
+                                        <img class="demo cursor card-img" src="img/mardiGras3.jpg" style="width:100%" onclick="currentSlide(7)" alt="Mountains and fjords">
+                                    </div>
+                                    <div class=" card col-sm-4">
+                                        <img class="demo cursor card-img" src="img/mardiGras4.jpg" style="width:100%" onclick="currentSlide(8)" alt="Northern Lights">
+                                    </div>
+                                    <div class=" card col-sm-4">
+                                        <img class="demo cursor card-img" src="img/mardiGras1.jpg" style="width:100%" onclick="currentSlide(9)" alt="Nature and sunrise">
+                                    </div>
+                                    <div class=" card col-sm-4">
+                                        <img class="demo cursor card-img" src="img/mardiGras2.jpg" style="width:100%" onclick="currentSlide(10)" alt="Snow">
+                                    </div>
+                                    <div class=" card col-sm-4">
+                                        <img class="demo cursor card-img" src="img/mardiGras3.jpg" style="width:100%" onclick="currentSlide(11)" alt="Mountains and fjords">
+                                    </div>
+                                    <div class=" card col-sm-4">
+                                        <img class="demo cursor card-img" src="img/mardiGras4.jpg" style="width:100%" onclick="currentSlide(12)" alt="Northern Lights">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--second-content-->
+                <section class="second-content"></section>
             </section>
+
+            <!--footer-->
 
             <footer class="grid-item-footer mt-5 p-5">
                 <div class="row">
@@ -184,16 +263,16 @@
                     </div>
                 </div>
             </footer>
+
         </div>
+
+        <script src="js/media.js"></script>
+        <script src="js/main.js"></script>
+        <script src="/js/jquery-3.5.1.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </div>
-
-    <script src="js/media.js"></script>
-    <script src="js/main.js"></script>
-    <script src="/js/jquery-3.5.1.min.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
 </body>
 
 </html>

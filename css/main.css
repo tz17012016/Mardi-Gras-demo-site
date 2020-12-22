@@ -4,6 +4,20 @@
   min-height: 20vh;
 }
 
+#hide {
+  display: none;
+}
+
+#hide-2 {
+  display: block;
+}
+
+#hide-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .flexContent {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -50,20 +64,104 @@
   transition: 0.3s;
 }
 
-.row > .column {
-  padding: 0 8px;
+.slidGrid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+      grid-template-areas: "slidItem-1 slidItem-2 slidItem-3 slidItem-4" "slidItem-5 slidItem-6 slidItem-7 slidItem-8" "slidItem-9 slidItem-10 slidItem-11 slidItem-12";
+  gap: 2rem;
+}
+
+.slidItem-1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: slidItem-1;
+}
+
+.slidItem-2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: slidItem-2;
+}
+
+.slidItem-3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: slidItem-3;
+}
+
+.slidItem-4 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: slidItem-4;
+}
+
+.slidItem-5 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: slidItem-5;
+}
+
+.slidItem-6 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: slidItem-6;
+}
+
+.slidItem-7 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: slidItem-7;
+}
+
+.slidItem-8 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: slidItem-8;
+}
+
+.slidItem-9 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: slidItem-9;
+}
+
+.slidItem-10 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: slidItem-10;
+}
+
+.slidItem-11 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: slidItem-11;
+}
+
+.slidItem-12 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+  grid-area: slidItem-12;
+}
+
+/*.row>.column {
+    padding: 0 8px;
 }
 
 .row:after {
-  content: "";
-  display: table;
-  clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .column {
-  float: left;
-  width: 25%;
+    float: left;
+    width: 25%;
 }
+
 
 /* The Modal (background) */
 .modal {
@@ -156,8 +254,14 @@
   top: 0;
 }
 
-img {
-  margin-bottom: -4px;
+.slidGrid img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
 }
 
 .caption-container {
@@ -190,6 +294,12 @@ img.hover-shadow {
   html:not(.home) .center.c1 {
     max-width: 700px;
   }
+  #hide {
+    display: block;
+  }
+  #hide-2 {
+    display: none;
+  }
 }
 
 html:not(.home) .center.c1 {
@@ -203,6 +313,25 @@ html:not(.home) .center.c1 {
     background: transparent;
     -webkit-box-shadow: none;
             box-shadow: none;
+  }
+  .slidGrid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "slidItem-1 slidItem-2" "slidItem-3 slidItem-4" "slidItem-5 slidItem-6" "slidItem-7 slidItem-8" "slidItem-9 slidItem-10" "slidItem-11 slidItem-12";
+    gap: 1rem;
+  }
+  #hide {
+    display: block;
+  }
+  #hide-2 {
+    display: none;
+  }
+  #hide-3 {
+    display: none;
   }
 }
 
@@ -238,9 +367,13 @@ footer {
           box-sizing: border-box;
 }
 
+body > .container {
+  padding-top: 60px;
+}
+
 .parallax {
   /* The image used */
-  background-image: url("../img/DefultBackground.jpg") !important;
+  background-image: url("https://image.freepik.com/vetores-gratis/padrao-de-carnaval-brasileiro-artistico-com-mascaras_23-2148404644.jpg") !important;
   /* Set a specific height */
   min-height: 600px !important;
   /* Create the parallax scrolling effect */
