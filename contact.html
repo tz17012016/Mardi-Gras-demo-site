@@ -19,7 +19,7 @@
         <div class="grid-continer">
             <!--nav bar-->
             <header class="grid-item-header">
-                <nav class="navbar navbar-expand-lg navbar-light ">
+                <nav class="navbar  navbar-expand-lg navbar-light ">
                     <div class="container-fluid">
                         <a class="navbar-brand justify-content-lg-start" href="index.html"><img src="img/mardi-icon-navbar.png" width="150" height="100" class="d-inline-block align-top" alt="" loading="lazy">
                         </a>
@@ -60,15 +60,15 @@
             <section class="grid-item-mainContent">
                 <!--first-content-->
                 <section class="first-content">
-                    <div class="container bg-light rounded">
-                        <form class="p-2">
+                    <div class="container bg-light rounded ">
+                        <form class="container row-cols-8">
                             <div class="form-group pt-2">
                                 <label for="first-name"> First Name</label>
-                                <input type="text" class="form-control" id="first-name" placeholder="Example input">
+                                <input type="text" class="form-control" id="first-name" placeholder="First Name">
                             </div>
                             <div class="form-group pt-2">
                                 <label for="last-name">Last Name</label>
-                                <input type="text" class="form-control" id="last-name" placeholder="Example input">
+                                <input type="text" class="form-control" id="last-name" placeholder="Last Name">
                             </div>
                             <div class="form-group pt-2">
                                 <label for="email-address">Email Address</label>
@@ -76,10 +76,10 @@
                             </div>
 
                             <div class="form-group pt-2">
-                                <label for="exampleFormControlTextarea1">Example textarea</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                <label for="text-area">Example textarea</label>
+                                <textarea class="form-control" id="text-area" rows="4"></textarea>
                             </div>
-                            <button class="form-group btn btn-primary " type="submit">submit</button>
+                            <button id="submit" class="form-group btn btn-primary " type="submit">submit</button>
                         </form>
                     </div>
 
@@ -91,16 +91,11 @@
 
             </section>
 
-            <footer class="grid-item-footer ">
+            <footer class="grid-item-footer mt-5 p-5">
                 <div class="row">
                     <div class="col-12 col-md">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24" focusable="false">
-                            <title>Product</title>
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <path
-                                d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94">
-                            </path>
-                        </svg>
+                        <a href="index.html"><img src="img/mardi-icon-navbar.png" width="150" height="100" alt="" loading="lazy">
+                        </a>
                         <small class="d-block mb-3 text-muted">© 2017-2020</small>
                     </div>
                     <div class="col-6 col-md">
