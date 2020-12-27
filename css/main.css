@@ -409,6 +409,23 @@ img.hover-shadow {
   #hide-3 {
     display: none;
   }
+  .sidebar-box {
+    max-height: 120px;
+    position: relative;
+    overflow: hidden;
+  }
+  .sidebar-box .read-more {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 30px 0;
+    /* "transparent" only works here because == rgba(0,0,0,0) */
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(black));
+    background-image: linear-gradient(to bottom, transparent, black);
+  }
   .about {
     background-image: url("../img/_big/mardi_defult-1.jpg") !important;
     background-size: cover !important;
