@@ -30,13 +30,22 @@
                         <div class="collapse navbar-collapse justify-content-center nav1 " id="navbarNavAltMarkup">
 
                             <div class="navbar-nav  ">
-                                <a class="nav-link m-3 bg-primary rounded text-center active" href="index.html">Home
-                                    <span class="sr-only">(current)</span></a>
-                                <a class="nav-link m-3 bg-primary rounded text-center" href="about.html">About</a>
-                                <a class="nav-link m-3 bg-primary rounded text-center" href="media.html">Media</a>
-                                <a class="nav-link m-3 bg-primary rounded text-center" href="FAQ.html">FAQ</a>
-                                <a class="nav-link m-3 bg-primary rounded text-center" href="contact.html">Contact</a>
-
+                                <a class="nav-link m-3  rounded text-center active" href="index.html">
+                                    <h4>Home</h4>
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                                <a class="nav-link m-3  rounded text-center" href="about.html">
+                                    <h4>About</h4>
+                                </a>
+                                <a class="nav-link m-3  rounded text-center" href="media.html">
+                                    <h4>Media</h4>
+                                </a>
+                                <a class="nav-link m-3  rounded text-center" href="FAQ.html">
+                                    <h4>FAQ</h4>
+                                </a>
+                                <a class="nav-link m-3  rounded text-center" href="contact.html">
+                                    <h4>Contact</h4>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -47,8 +56,8 @@
                 <div class="about"></div>
                 <div class="jumbotron jumbotron-fluid">
                     <div class="container">
-                        <h1 class="display-4">Fluid jumbotron</h1>
-                        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.
+                        <h1 class="display-4">About</h1>
+                        <p class="lead">Its all about heistory...
                         </p>
                     </div>
                 </div>
@@ -60,9 +69,9 @@
                 <!--first-content-->
                 <div class="container-fluid">
                     <div class="container">
-                        <div class="row ">
+                        <div class="gridAbout ">
 
-                            <section class="first-content col-lg-9">
+                            <section class="first-content ">
                                 <div class="contentAbout">
                                     <p>The origins of Mardi Gras can be traced to medieval Europe, passing through Rome and Venice in the 17th and 18th centuries to the French House of the Bourbons. From here, the traditional revelry of "Boeuf Gras," or
                                         fatted calf, followed France to her colonies.</p>
@@ -101,35 +110,47 @@
                             </section>
 
                             <!--second-content-->
-                            <aside class="second-content col-lg-3">
+                            <aside class="second-content ">
                                 <!--buttiom get you to FAQ-->
                                 <div>
-                                    <div class="card">
-
-                                        <div class="card-body">
-                                            <div class="weather">
-                                                <iframe frameborder="0" height="210" id="forecast_embed" src="https://forecast.io/embed/#lat=29.951066&amp;lon=-90.071532&amp;name=New Orleans&amp;color=#F3D738" type="text/html" width="100%"></iframe>
-                                                <a class="weather_link" href="/weather"></a>
-                                            </div>
-                                            <div class="d-flex justify-content-center align-items-center">
-                                                <div class="btn-group">
-                                                    <button type="button" class="btn btn-sm btn-warning"> Join Our
-                                                        Newsletter</button>
+                                    <div class=" weatherCard bg-light rounded ">
+                                        <div class="weatherMargin">
+                                            <div class="card-body">
+                                                <div class="weather ">
+                                                    <iframe frameborder="0" height="200" id="forecast_embed" src="https://forecast.io/embed/#lat=29.951066&amp;lon=-90.071532&amp;name=New Orleans&amp;color=#F3D738" type="text/html" width="100%"></iframe>
+                                                    <a class="weather_link" href="/weather"></a>
                                                 </div>
+                                                <div class="d-flex justify-content-center align-items-center">
+                                                    <div class="btn-group">
+                                                        <button type="button" class="btn btn-sm btn-warning"> Join Our
+                                                            Newsletter</button>
+                                                    </div>
+                                                </div>
+
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                            </aside>
 
-                                <!--<div class="center c1">
-                                <button class="join" id="hitme">
-                                    Join Our Newsletter
-                                </button>
-                                <div class="weather">
-                                    <iframe frameborder="0" height="210" id="forecast_embed" src="https://forecast.io/embed/#lat=29.951066&amp;lon=-90.071532&amp;name=New Orleans&amp;color=#F3D738" type="text/html" width="100%"></iframe>
-                                    <a class="weather_link" href="/weather"></a>
+                            <!--third-content-->
+
+                            <aside class="third-content rounded ">
+                                <div class="card">
+
+                                    <div class="card-body">
+                                        <h3 class="text-center">our mair LaToya Cantrell is caling for your halp!</h3>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <img class="rounded" style="max-height: 300px; max-width: 300px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/LaToya_Cantrell_%281%29.jpg/330px-LaToya_Cantrell_%281%29.jpg" alt="LaToya Cantrell">
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>-->
+
+                            </aside>
+                            <!--fix-content-->
+                            <aside class="fix-content  ">
+
+
                             </aside>
                         </div>
                     </div>
@@ -146,41 +167,37 @@
                         <small class="d-block mb-3 text-muted">© 2017-2020</small>
                     </div>
                     <div class="col-6 col-md">
-                        <h5>Features</h5>
+                        <h5>Map</h5>
                         <ul class="list-unstyled text-small">
-                            <li><a class="text-muted" href="#">Cool stuff</a></li>
-                            <li><a class="text-muted" href="#">Random feature</a></li>
-                            <li><a class="text-muted" href="#">Team feature</a></li>
-                            <li><a class="text-muted" href="#">Stuff for developers</a></li>
-                            <li><a class="text-muted" href="#">Another one</a></li>
-                            <li><a class="text-muted" href="#">Last time</a></li>
+                            <li><a class="text-muted" href="index.html">Home</li>
+                            <li><a class="text-muted" href="about.html">About</a></li>
+                            <li><a class="text-muted" href="media.html">Media</a></li>
+                            <li><a class="text-muted" href="FAQ.html">FAQ</a></li>
+                            <li><a class="text-muted" href="contact.html">Contact</a></li>
                         </ul>
                     </div>
                     <div class="col-6 col-md">
-                        <h5>Resources</h5>
+                        <h5>Our Sponsers</h5>
                         <ul class="list-unstyled text-small">
-                            <li><a class="text-muted" href="#">Resource</a></li>
-                            <li><a class="text-muted" href="#">Resource name</a></li>
-                            <li><a class="text-muted" href="#">Another resource</a></li>
-                            <li><a class="text-muted" href="#">Final resource</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-6 col-md">
-                        <h5>Resources</h5>
-                        <ul class="list-unstyled text-small">
-                            <li><a class="text-muted" href="#">Business</a></li>
-                            <li><a class="text-muted" href="#">Education</a></li>
-                            <li><a class="text-muted" href="#">Government</a></li>
-                            <li><a class="text-muted" href="#">Gaming</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-6 col-md">
-                        <h5>About</h5>
-                        <ul class="list-unstyled text-small">
-                            <li><a class="text-muted" href="#">Team</a></li>
-                            <li><a class="text-muted" href="#">Locations</a></li>
-                            <li><a class="text-muted" href="#">Privacy</a></li>
-                            <li><a class="text-muted" href="#">Terms</a></li>
+                            <li><a class="text-muted" target="_blank" href="https://www.marriott.com/hotels/travel/msyis-sheraton-new-orleans-hotel/">Sheraton
+                                    New Orleans Hotel</a>
+                            </li>
+                            <li><a class="text-muted" target="_blank" href="https://walk-ons.com/">Walk-On's Bistreaux
+                                    and Bar</a></li>
+                            <li><a class="text-muted" target="_blank" href="https://www.acehotel.com/neworleans/">Ace
+                                    Hotel
+                                    New Orleans</a></li>
+                            <li><a class="text-muted" target="_blank" href="https://www.ritzcarlton.com/en/hotels/new-orleans">The
+                                    Ritz-Carlton, New Orleans</a></li>
+                            <li><a class="text-muted" target="_blank" href="https://www.premiumparking.com/P402">Premium
+                                    Parking -
+                                    P402</a></li>
+                            <li><a class="text-muted" target="_blank" href="https://www.lcm.org/">Louisiana Children's
+                                    Museum</a></li>
+                            <li><a class="text-muted" target="_blank" href="http://www.museumofdeath.net/">Museum of
+                                    Death</a></li>
+                            <li><a class="text-muted" target="_blank" href="https://thehauntedmuseum.com/">Haunted
+                                    Museum</a></li>
                         </ul>
                     </div>
                 </div>

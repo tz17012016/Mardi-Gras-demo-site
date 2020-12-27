@@ -30,13 +30,22 @@
                         <div class="collapse navbar-collapse justify-content-center nav1 " id="navbarNavAltMarkup">
 
                             <div class="navbar-nav  ">
-                                <a class="nav-link m-3 bg-primary rounded text-center active" href="index.html">Home
-                                    <span class="sr-only">(current)</span></a>
-                                <a class="nav-link m-3 bg-primary rounded text-center" href="about.html">About</a>
-                                <a class="nav-link m-3 bg-primary rounded text-center" href="media.html">Media</a>
-                                <a class="nav-link m-3 bg-primary rounded text-center" href="FAQ.html">FAQ</a>
-                                <a class="nav-link m-3 bg-primary rounded text-center" href="contact.html">Contact</a>
-
+                                <a class="nav-link m-3  rounded text-center active" href="index.html">
+                                    <h4>Home</h4>
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                                <a class="nav-link m-3  rounded text-center" href="about.html">
+                                    <h4>About</h4>
+                                </a>
+                                <a class="nav-link m-3  rounded text-center" href="media.html">
+                                    <h4>Media</h4>
+                                </a>
+                                <a class="nav-link m-3  rounded text-center" href="FAQ.html">
+                                    <h4>FAQ</h4>
+                                </a>
+                                <a class="nav-link m-3  rounded text-center" href="contact.html">
+                                    <h4>Contact</h4>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -61,25 +70,25 @@
                 <!--first-content-->
                 <section class="first-content">
                     <div class="container bg-light rounded ">
-                        <form class="container row-cols-8">
+                        <form class="container row-cols-8" name="myForm">
                             <div class="form-group pt-2">
                                 <label for="first-name"> First Name</label>
-                                <input type="text" class="form-control" id="first-name" placeholder="First Name">
+                                <input name="fname" type="text" class="form-control" id="first-name" placeholder="First Name">
                             </div>
                             <div class="form-group pt-2">
                                 <label for="last-name">Last Name</label>
-                                <input type="text" class="form-control" id="last-name" placeholder="Last Name">
+                                <input name="lname" type="text" class="form-control" id="last-name" placeholder="Last Name">
                             </div>
                             <div class="form-group pt-2">
                                 <label for="email-address">Email Address</label>
-                                <input type="email" class="form-control" id="email-address" placeholder="name@example.com">
+                                <input name="email" type="email" class="form-control" id="email-address" placeholder="name@example.com">
                             </div>
 
                             <div class="form-group pt-2">
-                                <label for="text-area">Example textarea</label>
+                                <label for="text-area">Let us know more about... </label>
                                 <textarea class="form-control" id="text-area" rows="4"></textarea>
                             </div>
-                            <button id="submit" class="form-group btn btn-primary " type="submit">submit</button>
+                            <button name="submit" id="submit" class="form-group btn btn-primary " type="submit">submit</button>
                         </form>
                     </div>
 
@@ -99,41 +108,37 @@
                         <small class="d-block mb-3 text-muted">© 2017-2020</small>
                     </div>
                     <div class="col-6 col-md">
-                        <h5>Features</h5>
+                        <h5>Map</h5>
                         <ul class="list-unstyled text-small">
-                            <li><a class="text-muted" href="#">Cool stuff</a></li>
-                            <li><a class="text-muted" href="#">Random feature</a></li>
-                            <li><a class="text-muted" href="#">Team feature</a></li>
-                            <li><a class="text-muted" href="#">Stuff for developers</a></li>
-                            <li><a class="text-muted" href="#">Another one</a></li>
-                            <li><a class="text-muted" href="#">Last time</a></li>
+                            <li><a class="text-muted" href="index.html">Home</li>
+                            <li><a class="text-muted" href="about.html">About</a></li>
+                            <li><a class="text-muted" href="media.html">Media</a></li>
+                            <li><a class="text-muted" href="FAQ.html">FAQ</a></li>
+                            <li><a class="text-muted" href="contact.html">Contact</a></li>
                         </ul>
                     </div>
                     <div class="col-6 col-md">
-                        <h5>Resources</h5>
+                        <h5>Our Sponsers</h5>
                         <ul class="list-unstyled text-small">
-                            <li><a class="text-muted" href="#">Resource</a></li>
-                            <li><a class="text-muted" href="#">Resource name</a></li>
-                            <li><a class="text-muted" href="#">Another resource</a></li>
-                            <li><a class="text-muted" href="#">Final resource</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-6 col-md">
-                        <h5>Resources</h5>
-                        <ul class="list-unstyled text-small">
-                            <li><a class="text-muted" href="#">Business</a></li>
-                            <li><a class="text-muted" href="#">Education</a></li>
-                            <li><a class="text-muted" href="#">Government</a></li>
-                            <li><a class="text-muted" href="#">Gaming</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-6 col-md">
-                        <h5>About</h5>
-                        <ul class="list-unstyled text-small">
-                            <li><a class="text-muted" href="#">Team</a></li>
-                            <li><a class="text-muted" href="#">Locations</a></li>
-                            <li><a class="text-muted" href="#">Privacy</a></li>
-                            <li><a class="text-muted" href="#">Terms</a></li>
+                            <li><a class="text-muted" target="_blank" href="https://www.marriott.com/hotels/travel/msyis-sheraton-new-orleans-hotel/">Sheraton
+                                    New Orleans Hotel</a>
+                            </li>
+                            <li><a class="text-muted" target="_blank" href="https://walk-ons.com/">Walk-On's Bistreaux
+                                    and Bar</a></li>
+                            <li><a class="text-muted" target="_blank" href="https://www.acehotel.com/neworleans/">Ace
+                                    Hotel
+                                    New Orleans</a></li>
+                            <li><a class="text-muted" target="_blank" href="https://www.ritzcarlton.com/en/hotels/new-orleans">The
+                                    Ritz-Carlton, New Orleans</a></li>
+                            <li><a class="text-muted" target="_blank" href="https://www.premiumparking.com/P402">Premium
+                                    Parking -
+                                    P402</a></li>
+                            <li><a class="text-muted" target="_blank" href="https://www.lcm.org/">Louisiana Children's
+                                    Museum</a></li>
+                            <li><a class="text-muted" target="_blank" href="http://www.museumofdeath.net/">Museum of
+                                    Death</a></li>
+                            <li><a class="text-muted" target="_blank" href="https://thehauntedmuseum.com/">Haunted
+                                    Museum</a></li>
                         </ul>
                     </div>
                 </div>

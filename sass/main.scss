@@ -2,12 +2,38 @@
 @import "_content";
 @import "_nav";
 @import "_footer";
+@import url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Henny+Penny&family=Pattaya&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pattaya&family=Roboto&display=swap");
+$Henny-Penny: "Henny Penny",
+cursive;
+$Pattaya: "Pattaya",
+sans-serif;
+$Roboto: "Roboto",
+sans-serif;
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+//fonts
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $Pattaya, $Henny-Penny;
+    font-weight: 1.5;
+}
+
+p {
+    font-family: $Roboto;
+    font-weight: 1.5;
+}
+
+//
 body>.container {
     padding-top: 60px;
 }
