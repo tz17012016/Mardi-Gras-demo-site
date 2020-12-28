@@ -24,13 +24,179 @@
   height: max-content;
 }
 
-.infoAfect {
+.hideA1 {
+  display: inline-block;
+  float: right;
+}
+
+.infoAfect1 {
   position: relative;
   overflow: hidden;
   display: none;
 }
 
-.infoAfect .read-more {
+.infoAfect1 .read-more1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 30px 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(black));
+  background-image: linear-gradient(to bottom, transparent, black);
+}
+
+.hideA2 {
+  display: inline-block;
+  float: right;
+}
+
+.infoAfect2 {
+  position: relative;
+  overflow: hidden;
+  display: none;
+}
+
+.infoAfect2 .read-more2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 30px 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(black));
+  background-image: linear-gradient(to bottom, transparent, black);
+}
+
+.hideA3 {
+  display: inline-block;
+  float: right;
+}
+
+.infoAfect3 {
+  position: relative;
+  overflow: hidden;
+  display: none;
+}
+
+.infoAfect3 .read-more3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 30px 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(black));
+  background-image: linear-gradient(to bottom, transparent, black);
+}
+
+.hideA4 {
+  display: inline-block;
+  float: right;
+}
+
+.infoAfect4 {
+  position: relative;
+  overflow: hidden;
+  display: none;
+}
+
+.infoAfect4 .read-more4 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 30px 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(black));
+  background-image: linear-gradient(to bottom, transparent, black);
+}
+
+.hideA56 {
+  display: inline-block;
+  float: right;
+}
+
+.infoAfect5 {
+  position: relative;
+  overflow: hidden;
+  display: none;
+}
+
+.infoAfect5 .read-more5 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 30px 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(black));
+  background-image: linear-gradient(to bottom, transparent, black);
+}
+
+.hideA6 {
+  display: inline-block;
+  float: right;
+}
+
+.infoAfect6 {
+  position: relative;
+  overflow: hidden;
+  display: none;
+}
+
+.infoAfect6 .read-more6 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 30px 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(black));
+  background-image: linear-gradient(to bottom, transparent, black);
+}
+
+.hideA7 {
+  display: inline-block;
+  float: right;
+}
+
+.infoAfect7 {
+  position: relative;
+  overflow: hidden;
+  display: none;
+}
+
+.infoAfect7 .read-more7 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 30px 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(black));
+  background-image: linear-gradient(to bottom, transparent, black);
+}
+
+.hideA8 {
+  display: inline-block;
+  float: right;
+}
+
+.infoAfect8 {
+  position: relative;
+  overflow: hidden;
+  display: none;
+}
+
+.infoAfect8 .read-more8 {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -45,7 +211,8 @@
 .about {
   background-image: url("../img/_big/mardi_defult-1.jpg") !important;
   background-size: cover !important;
-  min-height: 600px !important;
+  min-height: 500px !important;
+  max-height: 700px !important;
   /* Create the parallax scrolling effect */
   background-attachment: fixed !important;
   background-position: center !important;
@@ -55,7 +222,8 @@
 .content {
   background-image: url("../img/_big/mardi_defult-2.jpg") !important;
   background-size: cover !important;
-  min-height: 600px !important;
+  min-height: 500px !important;
+  max-height: 700px !important;
   /* Create the parallax scrolling effect */
   background-attachment: fixed !important;
   background-position: center !important;
@@ -65,7 +233,8 @@
 .faq {
   background-image: url("../img/_big/mardi_defult.jpg") !important;
   background-size: cover !important;
-  min-height: 600px !important;
+  min-height: 500px !important;
+  max-height: 700px !important;
   /* Create the parallax scrolling effect */
   background-attachment: fixed !important;
   background-position: center !important;
@@ -75,7 +244,8 @@
 .mediaGalery {
   background-image: url("../img/_big/mardi_defult-4.jpg") !important;
   background-size: cover !important;
-  min-height: 600px !important;
+  min-height: 500px !important;
+  max-height: 700px !important;
   /* Create the parallax scrolling effect */
   background-attachment: fixed !important;
   background-position: center !important;
