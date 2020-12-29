@@ -1,19 +1,23 @@
-document.querySelector("#submit").addEventListener("click", () => {
-    let fname = document.forms["myForm"]["fname"].value;
-    let lname = document.forms["myForm"]["lname"].value;
-    let email = document.forms["myForm"]["email"].value;
-    if (fname == "") {
-        alert("Name must be filled out");
-        return false;
-    } else if (lname == "") {
-        alert("last name must be filled out");
-        return false;
-    } else if (email == "") {
-        alert("email must be filled out");
-        return false;
-    } else {
-        alert("submited");
-    }
-});
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+    "use strict";
 
-//function validateForm() {}
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.querySelectorAll(".needs-validation");
+
+    // Loop over them and prevent submission
+    Array.prototype.slice.call(forms).forEach(function(form) {
+        form.addEventListener(
+            "submit",
+            function(event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+
+                form.classList.add("was-validated");
+            },
+            false
+        );
+    });
+})();

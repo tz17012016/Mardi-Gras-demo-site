@@ -20,3 +20,8 @@ $(".jiku_text .btn").on("click", function() {
   $p.fadeOut();
   return false;
 });
+
+<div class="form-group pt-2 ">
+<label for="text-area ">Let us know more about... </label>
+<textarea class="form-control " id="text-area " rows="4 "></textarea>
+</div>

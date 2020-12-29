@@ -69,26 +69,78 @@
             <section class="grid-item-mainContent ">
                 <!--first-content-->
                 <section class="first-content ">
-                    <div class="container bg-light rounded ">
-                        <form class="container row-cols-8 " name="myForm ">
-                            <div class="form-group pt-2 ">
-                                <label for="first-name "> First Name</label>
-                                <input name="fname " type="text " class="form-control " id="first-name " placeholder="First Name ">
+                    <div class="container p-5 bg-light rounded ">
+                        <div id="error"></div>
+                        <form class="row g-3 needs-validation" novalidate>
+                            <div class="col-md-4">
+                                <label for="validationCustom01" class="form-label">First name</label>
+                                <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
                             </div>
-                            <div class="form-group pt-2 ">
-                                <label for="last-name ">Last Name</label>
-                                <input name="lname " type="text " class="form-control " id="last-name " placeholder="Last Name ">
+                            <div class="col-md-4">
+                                <label for="validationCustom02" class="form-label">Last name</label>
+                                <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
                             </div>
-                            <div class="form-group pt-2 ">
-                                <label for="email-address ">Email Address</label>
-                                <input name="email " type="email " class="form-control " id="email-address " placeholder="name@example.com ">
+                            <div class="col-md-4">
+                                <label for="validationCustomUsername" class="form-label">Username</label>
+                                <div class="input-group has-validation">
+                                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                    <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                                    <div class="invalid-feedback">
+                                        Please choose a username.
+                                    </div>
+                                </div>
                             </div>
-
-                            <div class="form-group pt-2 ">
-                                <label for="text-area ">Let us know more about... </label>
-                                <textarea class="form-control " id="text-area " rows="4 "></textarea>
+                            <div class="col-md-6">
+                                <label for="validationCustom03" class="form-label">City</label>
+                                <input type="text" class="form-control" id="validationCustom03" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid city.
+                                </div>
                             </div>
-                            <button name="submit " id="submit " class="form-group btn btn-primary " type="submit ">submit</button>
+                            <div class="col-md-3">
+                                <label for="validationCustom04" class="form-label">State</label>
+                                <select class="form-select" id="validationCustom04" required>
+                                    <option selected disabled value="">Choose...</option>
+                                    <option>...</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please select a valid state.
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="validationCustom05" class="form-label">Zip</label>
+                                <input type="text" class="form-control" id="validationCustom05" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid zip.
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                    <label class="form-check-label" for="invalidCheck">
+                                        Agree to terms and conditions
+                                    </label>
+                                    <div class="invalid-feedback">
+                                        You must agree before submitting.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="validationTextarea" class="form-label">Textarea</label>
+                                <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Required example textarea" required></textarea>
+                                <div class="invalid-feedback">
+                                    Please enter a message in the textarea.
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary" type="submit">Submit form</button>
+                            </div>
                         </form>
                     </div>
 
@@ -103,44 +155,48 @@
             <!--footer-->
             <footer class="grid-item-footer mt-5 p-5">
                 <div class="row">
-                    <div class="col-12 col-md">
+                    <div class="col-3 col-md">
                         <a href="index.html"><img src="img/mardi-icon-navbar.png" width="150" height="100" alt="" loading="lazy">
                         </a>
                         <small class="d-block mb-3 text-muted">© 2017-2020</small>
                     </div>
-                    <div class="col-6 col-md">
-                        <h5>Map</h5>
-                        <ul class="list-unstyled text-small">
-                            <li><a class="text-muted" href="index.html">Home</li>
-                            <li><a class="text-muted" href="about.html">About</a></li>
-                            <li><a class="text-muted" href="media.html">Media</a></li>
-                            <li><a class="text-muted" href="FAQ.html">FAQ</a></li>
-                            <li><a class="text-muted" href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-6 col-md">
-                        <h5>Our Sponsers</h5>
-                        <ul class="list-unstyled text-small">
-                            <li><a class="text-muted" target="_blank" href="https://www.marriott.com/hotels/travel/msyis-sheraton-new-orleans-hotel/">Sheraton
-                                    New Orleans Hotel</a>
-                            </li>
-                            <li><a class="text-muted" target="_blank" href="https://walk-ons.com/">Walk-On's Bistreaux
-                                    and Bar</a></li>
-                            <li><a class="text-muted" target="_blank" href="https://www.acehotel.com/neworleans/">Ace
-                                    Hotel
-                                    New Orleans</a></li>
-                            <li><a class="text-muted" target="_blank" href="https://www.ritzcarlton.com/en/hotels/new-orleans">The
-                                    Ritz-Carlton, New Orleans</a></li>
-                            <li><a class="text-muted" target="_blank" href="https://www.premiumparking.com/P402">Premium
-                                    Parking -
-                                    P402</a></li>
-                            <li><a class="text-muted" target="_blank" href="https://www.lcm.org/">Louisiana Children's
-                                    Museum</a></li>
-                            <li><a class="text-muted" target="_blank" href="http://www.museumofdeath.net/">Museum of
-                                    Death</a></li>
-                            <li><a class="text-muted" target="_blank" href="https://thehauntedmuseum.com/">Haunted
-                                    Museum</a></li>
-                        </ul>
+                    <div class="container col-10 d-flex justify-content-center align-items-center">
+                        <div class="col-lg-4 col-md-6 col-md ">
+                            <h5>Map</h5>
+                            <ul class="list-unstyled text-small">
+                                <li><a class="text-muted" href="index.html">Home</li>
+                                <li><a class="text-muted" href="about.html">About</a></li>
+                                <li><a class="text-muted" href="media.html">Media</a></li>
+                                <li><a class="text-muted" href="FAQ.html">FAQ</a></li>
+                                <li><a class="text-muted" href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 col-md-6 ">
+                            <h5>Our Sponsers</h5>
+                            <ul class="list-unstyled text-small">
+                                <li><a class="text-muted" target="_blank" href="https://www.marriott.com/hotels/travel/msyis-sheraton-new-orleans-hotel/">Sheraton
+                                        New Orleans Hotel</a>
+                                </li>
+                                <li><a class="text-muted" target="_blank" href="https://walk-ons.com/">Walk-On's
+                                        Bistreaux
+                                        and Bar</a></li>
+                                <li><a class="text-muted" target="_blank" href="https://www.acehotel.com/neworleans/">Ace
+                                        Hotel
+                                        New Orleans</a></li>
+                                <li><a class="text-muted" target="_blank" href="https://www.ritzcarlton.com/en/hotels/new-orleans">The
+                                        Ritz-Carlton, New Orleans</a></li>
+                                <li><a class="text-muted" target="_blank" href="https://www.premiumparking.com/P402">Premium
+                                        Parking -
+                                        P402</a></li>
+                                <li><a class="text-muted" target="_blank" href="https://www.lcm.org/">Louisiana
+                                        Children's
+                                        Museum</a></li>
+                                <li><a class="text-muted" target="_blank" href="http://www.museumofdeath.net/">Museum of
+                                        Death</a></li>
+                                <li><a class="text-muted" target="_blank" href="https://thehauntedmuseum.com/">Haunted
+                                        Museum</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </footer>
