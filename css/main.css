@@ -24,6 +24,36 @@
   height: max-content;
 }
 
+.bigText {
+  font-size: 1.5em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.contentBigText p {
+  font-weight: bold;
+}
+
+.contactFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+}
+
+.item-1 {
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+.sub {
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
 .hideA1 {
   display: inline-block;
   float: right;
@@ -116,7 +146,7 @@
   background-image: linear-gradient(to bottom, transparent, black);
 }
 
-.hideA56 {
+.hideA5 {
   display: inline-block;
   float: right;
 }
@@ -685,15 +715,87 @@ img.hover-shadow {
   margin-right: 12em;
 }
 
+.zoom {
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+  /* Animation */
+}
+
+.zoom1 {
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+  /* Animation */
+}
+
+.zoom:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.zoom1:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
 @media (max-width: 992px) {
   .nav1 {
     margin-right: 10em;
+  }
+  .zoom {
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
+    /* Animation */
+  }
+  .zoom:hover {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+  .zoom:hover {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+  .zoom1:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
   }
 }
 
 @media (max-width: 768px) {
   .nav1 {
     margin-right: 0;
+  }
+  .zoom {
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
+    /* Animation */
+  }
+  .zoom:hover {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+  .zoom:hover {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+  .zoom1:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
   }
 }
 
